@@ -1,12 +1,12 @@
 const check = require("./checkLib.js");
 const redis = require('redis');
 // mention your port no., host(db path) and password
-//let client = redis.createClient();
-let client = redis.createClient({
+let client = redis.createClient();
+/*let client = redis.createClient({
     port: 19726,
     host: 'redis-19726.c15.us-east-1-2.ec2.cloud.redislabs.com',
     password: 'UObA9JUILwcAWVYIJqp61EylSsFG1wDS'
-});
+});*/
 
 client.on('connect', () => {
 
